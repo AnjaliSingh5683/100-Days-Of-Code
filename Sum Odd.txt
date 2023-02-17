@@ -1,0 +1,18 @@
+public class SumOddRange {
+    public static boolean isOdd(int n)
+    {
+        return n>0&&n%2==1 ? true : false;
+    }
+    public static int sumOdd(int n , int k)
+    {
+        if(n>k||n<0||k<0)
+        return -1;
+        int s=0;
+        for(int i=n;i<=k;i++)
+        {
+            if(isOdd(i))
+            s=s+i;
+        }
+        return s;
+    }
+}
