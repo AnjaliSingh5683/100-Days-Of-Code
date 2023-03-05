@@ -1,0 +1,8 @@
+public class PlayingCat {
+    public static boolean isCatPlaying(boolean s, int t){
+        if((s&amp;&amp;t&gt;=25&amp;&amp;t&lt;=45)||(!s&amp;&amp;t&gt;=25&amp;&amp;t&lt;=35))
+        return true;
+        else
+        return false;
+   }
+}
